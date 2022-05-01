@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { Link } from "react-router-dom";
 import NavLogo from "../assets/shared/logo.svg";
 import hamIcon from "../assets/shared/icon-hamburger.svg";
-import crossIcon from "../assets/shared/icon-close.svg";
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [open, setOpen] = useState(false);

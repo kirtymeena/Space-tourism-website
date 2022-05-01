@@ -30,7 +30,7 @@
   justify-content: center;
   align-items: center;
   @include lg {
-    @include flexDisplay($gap:8 );
+    @include flexDisplay($gap:7 );
   }
 }
 
@@ -48,6 +48,9 @@
 
     img {
       height: 290px;
+      @include lg{
+        height:320px
+      }
       
     }
   }

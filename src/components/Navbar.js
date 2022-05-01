@@ -43,7 +43,7 @@ const Navbar = () => {
               <li className="nav-link underline__indicator">
                 <Link
                   to="/"
-                  onClick={(e) => setActive(e.target.textContent)}
+                  onClick={(e) => {setActive(e.target.textContent); setOpen(false)}}
                   className={`link ff-sans-cond letter-spacing-2 uppercase ${
                      active === "Home" ? "active" : " "
                   }`}
@@ -54,7 +54,7 @@ const Navbar = () => {
               <li className="nav-link underline__indicator">
                 <Link
                   to="/destination"
-                  onClick={(e) => setActive(e.target.textContent)}
+                  onClick={(e) => {setActive(e.target.textContent);setOpen(false)}}
                   className={`link ff-sans-cond letter-spacing-2 uppercase ${
                    active === "Destination" ? "active" : " "
                   }`}
@@ -65,7 +65,7 @@ const Navbar = () => {
               <li className="nav-link underline__indicator">
                 <Link
                   to="/crew"
-                  onClick={(e) => setActive(e.target.textContent)}
+                  onClick={(e) => {setActive(e.target.textContent);setOpen(false)}}
                   className={`link ff-sans-cond letter-spacing-2 uppercase ${
                      active === "Crew" ? "active" : " "
                   }`}
@@ -76,7 +76,7 @@ const Navbar = () => {
               <li className="nav-link underline__indicator">
                 <Link
                   to="/technology"
-                  onClick={(e) => setActive(e.target.textContent)}
+                  onClick={(e) => {setActive(e.target.textContent);setOpen(false)}}
                   className={`link ff-sans-cond letter-spacing-2 uppercase ${
                     active === "Technology" ? "active" : " "
                   }`}

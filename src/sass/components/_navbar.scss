@@ -3,7 +3,7 @@
 
 .nav {
   position: absolute;
-  // border: 2px solid olive;
+ 
   display: flex;
   align-items: center;
   width: 100%;
@@ -110,8 +110,8 @@
   right: 1px;
   background: rgba(57, 75, 100, 0.5);
   backdrop-filter: blur(0.2rem);
-  min-width: 15rem;
-  transition: all 0.9s linear;
+  // min-width: 15rem;
+  // transition: all 0.9s linear;
   z-index:100;
 
   .cross {
@@ -124,11 +124,11 @@
 
 .open {
   visibility: visible;
-  min-width: 15rem;
+  // min-width: 15rem;
 }
 .close {
   visibility: hidden;
-  min-width: 0rem;
+  // min-width: 0rem;
 }
 
 .nav__slide-items {

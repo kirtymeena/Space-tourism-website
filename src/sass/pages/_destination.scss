@@ -1,0 +1,44 @@
+@use "../utils/mixin" as *;
+@use "../utils/breakpoints" as *;
+
+.bg__destination{
+    background: url("../../assets/destination/background-destination-mobile.jpg");
+    height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    @include md{
+        background: url("../../assets/destination/background-destination-tablet.jpg");
+        background-repeat: no-repeat;
+        width:100vw;
+        background-size: cover;
+
+    }
+
+    @include lg{
+        background:url("../../assets/destination/background-destination-desktop.jpg")
+    }
+   
+}
+
+/* ------------------------------------------------------ */
+
+
+.destination__flex{
+    @include flexDisplay($gap:20);
+
+}
+
+.flex__planet{
+    border:2px solid yellow;
+    font-size:1.7em;
+    
+    
+}
+
+.flex__info{
+    border:2px solid cornflowerblue
+}
+
+

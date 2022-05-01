@@ -1,0 +1,143 @@
+@use "../utils/variables" as *;
+@use "../utils/breakpoints" as *;
+
+.nav {
+  position: absolute;
+  // border: 2px solid olive;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  gap: 3rem;
+  min-height: 150px;
+
+  .link {
+    text-decoration: none;
+    color: hsl($clr-white);
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .nav__line {
+    position: absolute;
+    padding-inline: 9rem;
+    min-width: 55.6%;
+  }
+
+  // medium screens
+  @include md {
+    .nav__hamburger {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 1348px) {
+    .nav__line {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .nav__links {
+      display: none;
+    }
+  }
+
+  .nav__links {
+    background: rgb(57, 75, 100, 0.5);
+    backdrop-filter: blur(0.2rem);
+
+    .nav__link {
+      list-style-type: none;
+      display: flex;
+      padding-block: 2rem;
+      * {
+        padding: 0.7rem;
+      }
+
+      // desktop
+      @include lg {
+        padding-right: 8rem;
+
+        padding-block: 1.5rem;
+      }
+    }
+  }
+}
+
+/* nav indicator */
+
+.underline__indicator > * {
+  opacity: 100%;
+}
+.underline__indicator > *:hover,
+.underline__indicator > *::before {
+  border-bottom: 0.2rem solid hsl($clr-white);
+  border-color: hsl($clr-white);
+  opacity: 50%;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out 0s;
+}
+.underline__indicator::before {
+  transform: scaleX(1);
+}
+
+.underline__indicator > .active,
+.underline__indicator > .active::before {
+  border-bottom: 0.2rem solid hsl($clr-white);
+  border-color: hsl($clr-white);
+  opacity: 100%;
+  transform: scaleX(2);
+}
+
+/* -------------------- */
+/* sass for small screen */
+/* -------------------- */
+
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  opacity: 80%;
+}
+
+.nav__slide {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 1px;
+  background: rgba(57, 75, 100, 0.5);
+  backdrop-filter: blur(0.2rem);
+  min-width: 15rem;
+  transition: all 0.9s linear;
+  z-index:100;
+
+  .cross {
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left:9rem;
+    padding-inline: 2rem;
+  }
+}
+
+.open {
+  visibility: visible;
+  min-width: 15rem;
+}
+.close {
+  visibility: hidden;
+  min-width: 0rem;
+}
+
+.nav__slide-items {
+  padding: 1rem;
+
+  .nav__slide-link {
+    list-style-type: none;
+    .nav-link {
+      padding-block: 1rem;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@use "../utils/variables" as *;
+@use "../utils/breakpoints" as *;
+.container {
+  padding-inline: 2rem;
+  @include lg{
+      padding-inline:10rem
+  }
+  padding-block: 1rem;
+  margin: 0;
+}
+
+.container-nav {
+  padding-left: 2rem;
+  padding-block: 1rem;
+  margin: 0;
+}
+.content{
+  margin-top: 10rem;
+}
+
+
+
+.text-white {
+  color: hsl($clr-white);
+}
+.text-dark {
+  color: hsl($clr-dark);
+}
+.text-accent {
+  color: hsl($clr-light);
+}
+
+/* typography */
+
+.ff-serif {
+  font-family: $ff-serif;
+}
+.ff-sans-cond {
+  font-family: $ff-sans-cond;
+}
+.ff-sans-normal {
+  font-family: $ff-sans-normal;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+.letter-spacing-3 {
+  letter-spacing: 2.35px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-900 {
+  font-size: $fs-900;
+}
+.fs-800 {
+  font-size: $fs-800;
+}
+.fs-700 {
+  font-size: $fs-700;
+}
+.fs-600 {
+  font-size: $fs-600;
+}
+.fs-500 {
+  font-size: $fs-500;
+}
+.fs-400 {
+  font-size: $fs-400;
+}
+.fs-300 {
+  font-size: $fs-300;
+}
+.fs-200 {
+  font-size: $fs-200;
+}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+  line-height: 1.1;
+}
+
+// anything which is not first child
+.flow > *:where(:not(:first-child)) {
+  margin-top: 1rem;
+}

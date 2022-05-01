@@ -1,0 +1,74 @@
+@use "../utils/breakpoints" as *;
+
+.bg__home {
+  background: url("../../assets/home/background-home-mobile.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  @include md {
+    background: url("../../assets/home/background-home-tablet.jpg");
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 100vh;
+    background-size: cover;
+  }
+
+  @include lg {
+    background: url("../../assets/home/background-home-desktop.jpg");
+    min-height: 100vh;
+  }
+}
+
+.flex__container {
+  display: flex;
+  flex-direction: column;
+  
+  @include lg {
+    flex-direction: row;
+    gap: 10rem;
+    align-items: center;
+    text-align: left;
+  }
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+  .flex__item1 {
+    // border:2px solid red
+    p {
+      padding-block: 2rem;
+      
+    }
+    .text-top {
+      font-size: 1.3em;
+    }
+    .text-mid {
+      font-size: 6em;
+      font-weight: 300;
+      @include lg{
+        font-size: 8rem;
+      }
+      
+    }
+    .text-bottom {
+      font-size: 1.2rem;
+      @include md {
+        padding-inline: 3rem;
+      }
+      @include lg {
+        padding-inline: 0;
+      }
+    }
+  }
+}
+
+.flex__item2 {
+  @include lg {
+    margin-top: 5rem;
+    padding-inline: 5rem;
+  }
+  padding-bottom: 2rem;
+}

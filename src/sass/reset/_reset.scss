@@ -1,0 +1,14 @@
+@use "../utils/variables" as *;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+    // border:4px solid tomato;
+    background-color: hsl($clr-dark);
+    color:hsl($clr-white)
+}

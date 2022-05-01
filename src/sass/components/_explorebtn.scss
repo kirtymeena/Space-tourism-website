@@ -1,0 +1,43 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+@use "../utils/breakpoints" as *;
+.btn__outer {
+    display: flex;
+  
+  
+
+  .btn__explore {
+    position: relative;
+    display: inline-grid;
+    z-index: 1;
+    padding: 0 1em;
+    place-items: center;
+    // turn div into the perfect sqaure
+    aspect-ratio: 1;
+    border-radius: 50%;
+    text-decoration: none;
+    background: hsl($clr-white);
+  }
+}
+.btn__explore::after {
+  content: "";
+  position: absolute;
+  background: hsl($clr-white);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 500ms linear, transform 750ms ease-in-out;
+}
+
+.btn__explore:hover::after,
+.btn__explore:focus::after {
+  opacity: 20%;
+  transform: scale(1.4);
+  @include lg{
+    transform: scale(1.5);
+  }
+ 
+
+}

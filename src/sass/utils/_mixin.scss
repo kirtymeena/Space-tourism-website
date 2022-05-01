@@ -1,0 +1,5 @@
+@mixin flexDisplay($felxDirection: row, $gap: 1) {
+  display: flex;
+  flex-direction: $felxDirection;
+  gap: $gap + rem;
+}

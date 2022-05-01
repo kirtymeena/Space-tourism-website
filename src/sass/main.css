@@ -4,4 +4,5 @@
 @use "./utils/common.scss";
 @use "./pages/destination";
 @use "./components/explorebtn";
+@use "./components/tabs";
 /*# sourceMappingURL=main.css.map */

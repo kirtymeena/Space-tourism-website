@@ -8,7 +8,10 @@
 
 body{
     min-height:100vh;
-    // border:4px solid tomato;
+    display: grid;
+   
     background-color: hsl($clr-dark);
-    color:hsl($clr-white)
+    color:hsl($clr-white);
+    z-index:-1;
+    overflow-x: hidden;
 }

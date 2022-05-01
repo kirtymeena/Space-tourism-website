@@ -112,7 +112,7 @@ const Navbar = () => {
                 active === "01" || active === "01Destination" ? "active" : " "
               }`}
             >
-              <span className="num">01</span>Destination
+              <span>01</span>Destination
             </Link>
           </li>
           <li className="underline__indicator">
@@ -123,7 +123,7 @@ const Navbar = () => {
                 active === "02" || active === "02Crew" ? "active" : " "
               }`}
             >
-              <span className="num">02</span>Crew
+              <span >02</span>Crew
             </Link>
           </li>
           <li className="underline__indicator">
@@ -134,7 +134,7 @@ const Navbar = () => {
                 active === "03" || active === "03Technology" ? "active" : " "
               }`}
             >
-              <span className="num">03</span>Technology
+              <span >03</span>Technology
             </Link>
           </li>
         </ul>

@@ -1,44 +1,83 @@
 @use "../utils/mixin" as *;
 @use "../utils/breakpoints" as *;
 
-.bg__destination{
-    background: url("../../assets/destination/background-destination-mobile.jpg");
-    height:100vh;
-    background-size: cover;
+.bg__destination {
+  background: url("../../assets/destination/background-destination-mobile.jpg");
+  min-height: 100vh;
+  width:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include md {
+    background: url("../../assets/destination/background-destination-tablet.jpg");
     background-repeat: no-repeat;
-    
-    
-    @include md{
-        background: url("../../assets/destination/background-destination-tablet.jpg");
-        background-repeat: no-repeat;
-        width:100vw;
-        background-size: cover;
+    width: 100vw;
+    min-height:100vh;
+    background-size: cover;
+  }
 
-    }
-
-    @include lg{
-        background:url("../../assets/destination/background-destination-desktop.jpg")
-    }
-   
+  @include lg {
+    background: url("../../assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    min-height:100vh
+  }
 }
 
 /* ------------------------------------------------------ */
 
-
-.destination__flex{
-    @include flexDisplay($gap:20);
-
+.destination__flex {
+  @include flexDisplay($felxDirection: column, $gap: 4);
+  justify-content: center;
+  align-items: center;
+  @include lg {
+    @include flexDisplay($gap:8 );
+  }
 }
 
-.flex__planet{
-    border:2px solid yellow;
-    font-size:1.7em;
-    
-    
+.flex__planet {
+  @include flexDisplay($felxDirection: column, $gap: 4);
+
+  border: 2px solid yellow;
+  font-size: 1.7em;
+  justify-content: center;
+  align-items: center;
+  
+  .planets {
+    padding-block: 2rem;
+    padding-inline: 2rem;
+
+    img {
+      height: 290px;
+      
+    }
+  }
 }
 
-.flex__info{
-    border:2px solid cornflowerblue
+.flex__info {
+  border: 2px solid cornflowerblue;
+  @include flexDisplay(column,1rem);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @include lg{
+    align-items:flex-start;
+    text-align: left;
+  }
+  .info {
+    padding-inline: 1rem;
+    padding-block: 3rem;
+    p {
+      font-size: 4em;
+      padding-block: 1rem;
+    }
+    .desc {
+      font-size: 1.2em;
+    }
+  }
 }
 
-
+.num {
+  opacity: 50%;
+  font-weight: 600;
+  padding-inline: 1rem;
+}

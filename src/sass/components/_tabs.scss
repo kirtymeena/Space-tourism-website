@@ -1,0 +1,22 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+
+.tab__list {
+  @include flexDisplay(2);
+  padding: 1rem;
+  margin: 0;
+  button {
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+}
+
+ 
+
+.underline-indicator > .active,
+.underline-indicators > [aria-selected="true"]  {
+  border-bottom: 0.2rem solid hsl($clr-white);
+  border-color: hsl($clr-white);
+  opacity: 100%;
+}

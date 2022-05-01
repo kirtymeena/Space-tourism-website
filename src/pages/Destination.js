@@ -40,10 +40,10 @@ const Destination = () => {
             </p>
           </div>
           <div className="planets">
-            {planetName=="Moon"&&<img src={Moon} alt="planet"/>}
-            {planetName=="Mars"&&<img src={Mars} alt="planet"/>}
-            {planetName=="Europa"&&<img src={Europa} alt="planet"/>}
-            {planetName=="Titan"&&<img src={Titan} alt="planet"/>}
+            {planetName==="Moon"&&<img src={Moon} alt="planet"/>}
+            {planetName==="Mars"&&<img src={Mars} alt="planet"/>}
+            {planetName==="Europa"&&<img src={Europa} alt="planet"/>}
+            {planetName==="Titan"&&<img src={Titan} alt="planet"/>}
           </div>
                 
         </div>

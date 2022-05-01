@@ -7,17 +7,14 @@ import Europa from "../assets/destination/image-europa.png";
 
 const Destination = () => {
 
-  const[planetImage,setImage] = useState("")
   const[selected,setSelected] = useState("Moon")
   const[description,setDescription] = useState("")
   const [planetName,setName] = useState("Moon")
-  const [imgName,setImgName] = useState(["Moon,Mars"])
 
   useEffect(()=>{
     const setData=()=>{
     data.destinations.forEach(dest=>{
       if(selected===dest.name){
-      setImage(dest.images.png)
       setDescription(dest.description)
       setName(dest.name)
       console.log(dest.images.png)

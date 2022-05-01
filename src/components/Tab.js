@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { button } from 'react-router-dom'
 
 const Tabs = () => {
     const[selected,setSelected] = useState("")

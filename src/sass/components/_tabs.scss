@@ -15,7 +15,7 @@
  
 
 .underline-indicator > .active,
-.underline-indicators > [aria-selected="true"]  {
+.underline-indicators >button  {
   border-bottom: 0.2rem solid hsl($clr-white);
   border-color: hsl($clr-white);
   opacity: 100%;

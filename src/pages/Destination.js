@@ -10,13 +10,17 @@ const Destination = () => {
   
 
   useEffect(()=>{
-    data.destinations.map(dest=>{
+    const setData=()=>{
+    data.destinations.forEach(dest=>{
       if(selected===dest.name){
       setImage(dest.images.png)
       setDescription(dest.description)
       console.log(planetImage)
       }
+    
     })
+  }
+  setData();
   })
   return (
     <div className="bg__destination container">

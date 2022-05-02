@@ -37,10 +37,10 @@
   text-align: center;
  
   .flex__item1 {
-    // border:2px solid red
     p {
       padding-block: 2rem;
       
+
     }
     .text-top {
       font-size: 1.3em;
@@ -48,6 +48,7 @@
     .text-mid {
       font-size: 6em;
       font-weight: 300;
+      
       @include lg{
         font-size: 8rem;
       }

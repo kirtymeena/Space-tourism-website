@@ -5,19 +5,19 @@
   background: url("../../assets/crew/background-crew-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 
   @include md {
     background: url("../../assets/crew/background-crew-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   @include sm {
     background: url("../../assets/crew/background-crew-desktop.jpg");
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
   }

@@ -11,7 +11,6 @@ const Destination = () => {
   const [planetName, setName] = useState("Moon");
   const [distance, setDistance] = useState("");
   const [travel, setTravel] = useState("");
-  const[fade,setFade] = useState(false)
 
   useEffect(() => {
     const setData = () => {

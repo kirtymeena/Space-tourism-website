@@ -81,7 +81,7 @@ const Destination = () => {
             </button>
           </div>
           <div className="info">
-            <p className="planet__name ff-sans uppercase letter-spacing-1">
+            <p className="planet__name ff-serif uppercase letter-spacing-1">
               {planetName}
             </p>
             <p className="desc ff-sans-cond uupercase leeter-spacing-2 text-accent">
@@ -94,13 +94,13 @@ const Destination = () => {
                   <p className="info__text text-accent uppercase letter-spacing-3 ff-sans-cond">
                     Avg. Distance
                   </p>
-                  <p className="info__text2 uppercase">{distance}</p>
+                  <p className="info__text2 uppercase ff-sans-cond">{distance}</p>
                 </div>
                 <div>
                   <p className="info__text text-accent uppercase letter-spacing-3 ff-sans-cond">
                     EST. Travel time
                   </p>
-                  <p className="info__text2 uppercase">{travel}</p>
+                  <p className="info__text2 uppercase ff-sans-cond">{travel}</p>
                 </div>
               </div>
             </div>

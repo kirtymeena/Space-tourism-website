@@ -35,7 +35,7 @@
     padding-bottom: 2rem;
   }
   .header {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
   }
   .crew__info {
     @include flexDisplay(column-reverse, 2);
@@ -59,8 +59,8 @@
       padding-block: 0.4rem;
     }
     .role {
-      font-size: 1.7em;
       opacity: 50%;
+      padding-bottom:0.5rem
     }
     .name {
       font-size: 2.2em;
@@ -74,11 +74,11 @@
   .crew__image {
     img {
       height: 23rem;
-      @include md{
-        height:30rem;
+      @include md {
+        height: 30rem;
       }
-      @include lg{
-        height:30rem
+      @include lg {
+        height: 30rem;
       }
       animation: 1s ease-out 0s 1 slideFromRight;
     }

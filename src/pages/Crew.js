@@ -36,10 +36,10 @@ const Crew = () => {
 
         <div className="crew__info">
           <div className="crew__details">
-          <p className="role uppercase text-accent ff-serif letter-spacing-3">
+          <h1 className="role uppercase text-accent ff-serif letter-spacing-3">
               {role}
-            </p>
-            <p className="name uppercase ff-serif letter-spacing-3">{name}</p>
+            </h1>
+            <h1 className="name uppercase ff-serif letter-spacing-3">{name}</h1>
             <p className="description text-accent letter-spacing-3 ff-sans-normal">{bio}</p>
 
             <div className="dot__indicator">

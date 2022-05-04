@@ -4,14 +4,14 @@
 
 .bg__technology {
   background: url("../../assets//technology/background-technology-mobile.jpg");
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
 
   @include md {
     background: url("../../assets/technology/background-technology-tablet.jpg");
-    height: 100%;
+    min-height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@
 
   @include lg {
     background: url("../../assets/technology/background-technology-desktop.jpg");
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,6 +88,7 @@
       padding-bottom: 1.3rem;
     }
     .text-bottom {
+      font-size:1.2rem;
       @include lg {
         font-size: 1.3em;
       }

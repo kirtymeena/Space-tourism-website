@@ -1,9 +1,9 @@
 @use "../utils/variables" as *;
 @use "../utils/breakpoints" as *;
 .container {
-  padding-inline: 2rem;
-  @include lg{
-      padding-inline:15rem
+  padding-inline: 1rem;
+  @include lg {
+    padding-inline: 8rem;
   }
   padding-block: 1rem;
   margin: 0;
@@ -14,11 +14,9 @@
   padding-block: 1rem;
   margin: 0;
 }
-.content{
+.content {
   margin-top: 10rem;
 }
-
-
 
 .text-white {
   color: hsl($clr-white);
@@ -91,4 +89,14 @@
 // anything which is not first child
 .flow > *:where(:not(:first-child)) {
   margin-top: 1rem;
+}
+
+.heading {
+  font-size: 1.7em;
+
+  .num {
+    opacity: 50%;
+    font-weight: 600;
+    padding-right:1rem; 
+  }
 }

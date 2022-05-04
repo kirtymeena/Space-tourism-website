@@ -8,8 +8,8 @@
 
 body{
     min-height:100vh;
-    display: grid;
-   
+    display: inline-grid;
+    justify-items: center;   
     background-color: hsl($clr-dark);
     color:hsl($clr-white);
     z-index:-1;

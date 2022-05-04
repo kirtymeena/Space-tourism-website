@@ -5,4 +5,7 @@
 @use "./pages/destination";
 @use "./components/explorebtn";
 @use "./components/tabs";
+@use "./pages/crew";
+@use "./components/dotIndicator";
+@use "./pages/technology";
 /*# sourceMappingURL=main.css.map */

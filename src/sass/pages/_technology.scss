@@ -1,0 +1,138 @@
+@use "../utils/mixin" as *;
+@use "../utils/variables" as *;
+@use "../utils/breakpoints" as *;
+
+.bg__technology {
+  background: url("../../assets//technology/background-technology-mobile.jpg");
+  height: 100%;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include md {
+    background: url("../../assets/technology/background-technology-tablet.jpg");
+    height: 100%;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include lg {
+    background: url("../../assets/technology/background-technology-desktop.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.flex__tech {
+  @include flexDisplay(column, 4);
+  //
+  @include lg {
+    align-items: flex-start;
+  }
+  align-items: center;
+}
+
+.tech__info {
+  padding-block: 4rem;
+  @include flexDisplay(column-reverse, 4);
+  @include lg {
+    @include flexDisplay(row, 4);
+  }
+  align-items: center;
+  .tech__details {
+    @include flexDisplay(column, 2);
+    align-items: center;
+    text-align: center;
+    @include lg {
+      @include flexDisplay(row, 6);
+      text-align: left;
+      align-items: flex-start;
+    }
+    .button__navigation {
+      @include flexDisplay(row, 2);
+      @include lg {
+        @include flexDisplay(column, 2);
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.8rem;
+        border: 1px solid $transperent-clr;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        background: none;
+        cursor: pointer;
+        color: hsl($clr-white);
+        font-size: 1.5rem;
+        transition: background 1s ease;
+      }
+      button:hover,
+      .active {
+        background: hsl($clr-white);
+        color: hsl($clr-dark);
+      }
+      button:active {
+        background: none;
+        color: hsl($clr-white);
+      }
+    }
+    .top-text {
+      padding-bottom: 1rem;
+    }
+    .middle-text {
+      font-size: 2em;
+      padding-bottom: 1.3rem;
+    }
+    .text-bottom {
+      @include lg {
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  .tech__item {
+    @include sm {
+      display: none;
+    }
+    @include md {
+      display: none;
+    }
+    @include lg {
+      display: block;
+      min-width: 300px;
+    }
+  }
+  .tech__images {
+    .desktop {
+      display: none;
+    }
+    @include md {
+      .desktop {
+        display: none;
+      }
+      
+    }
+    @include lg {
+      .mobile {
+        display: none;
+      }
+      .desktop {
+        display: block;
+        width: 480px;
+        height: 480px;
+        position: absolute;
+        top: 10rem;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    img {
+      height: 22rem;
+      width: 22rem;
+    }
+  }
+}

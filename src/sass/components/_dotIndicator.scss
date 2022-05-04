@@ -1,0 +1,23 @@
+@use "../utils/variables" as *;
+
+.dot__indicator{
+    padding-block:6rem;
+    .btn{
+        margin-inline: 0.6rem;
+        padding:0.3rem;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        border:none;
+        background:hsl($clr-white);
+        cursor:pointer;
+        opacity:30%;
+        transition:opacity 1s ease 
+
+    }
+    .btn:hover,.btn:focus{
+        opacity: 100%;
+    }
+    .active-btn{
+        opacity: 100%;
+    }
+}

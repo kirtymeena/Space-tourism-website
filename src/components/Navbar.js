@@ -1,12 +1,13 @@
 import React, {  useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useLocation} from "react-router-dom";
 import NavLogo from "../assets/shared/logo.svg";
 import hamIcon from "../assets/shared/icon-hamburger.svg";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [open, setOpen] = useState(false);
-
+  const params = useLocation()
+  console.log(params.pathname)
   return (
     <nav className="nav container-nav">
       <div className="nav__logo">
@@ -59,7 +60,7 @@ const Navbar = () => {
                    active === "Destination" ? "active" : " "
                   }`}
                 >
-                  Destination
+                  <span>01</span>Destination
                 </Link>
               </li>
               <li className="nav-link underline__indicator">
@@ -70,7 +71,7 @@ const Navbar = () => {
                      active === "Crew" ? "active" : " "
                   }`}
                 >
-                  Crew
+                  <span>02</span>Crew
                 </Link>
               </li>
               <li className="nav-link underline__indicator">
@@ -81,7 +82,7 @@ const Navbar = () => {
                     active === "Technology" ? "active" : " "
                   }`}
                 >
-                  Technology
+                  <span>03</span>Technology
                 </Link>
               </li>
             </ul>
@@ -98,7 +99,7 @@ const Navbar = () => {
             <Link
               to="/"
               className={`link ff-sans-cond letter-spacing-2 uppercase ${
-                active === "00" || active === "00Home" ? "active" : " "
+                (active === "00" || active === "00Home") || params.pathname==="/" ? "active" : " "
               }`}
             >
               <span>00</span>Home
@@ -109,7 +110,7 @@ const Navbar = () => {
               to="/destination"
               onClick={(e) => setActive(e.target.textContent)}
               className={`link ff-sans-cond letter-spacing-2 uppercase ${
-                active === "01" || active === "01Destination" ? "active" : " "
+                active === "01" || active === "01Destination" || params.pathname==="/destination" ? "active" : " "
               }`}
             >
               <span>01</span>Destination
@@ -120,7 +121,7 @@ const Navbar = () => {
               to="/crew"
               onClick={(e) => setActive(e.target.textContent)}
               className={`link ff-sans-cond letter-spacing-2 uppercase ${
-                active === "02" || active === "02Crew" ? "active" : " "
+                active === "02" || active === "02Crew" || params.pathname==="/crew" ? "active" : " "
               }`}
             >
               <span >02</span>Crew
@@ -131,7 +132,7 @@ const Navbar = () => {
               to="/technology"
               onClick={(e) => setActive(e.target.textContent)}
               className={`link ff-sans-cond letter-spacing-2 uppercase ${
-                active === "03" || active === "03Technology" ? "active" : " "
+                active === "03" || active === "03Technology" ||  params.pathname==="/technology" ? "active" : " "
               }`}
             >
               <span >03</span>Technology

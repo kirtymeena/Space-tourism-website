@@ -1,0 +1,86 @@
+@use "../utils/mixin" as *;
+@use "../utils/breakpoints" as *;
+
+.bg__crew {
+  background: url("../../assets/crew/background-crew-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+
+  @include md {
+    background: url("../../assets/crew/background-crew-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  @include sm {
+    background: url("../../assets/crew/background-crew-desktop.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.flex__crew {
+  padding-inline: 2rem;
+  @include flexDisplay(column, 2);
+  justify-content: center;
+  align-items: center;
+
+  @include lg {
+    @include flexDisplay(column, 2);
+    align-items: flex-start;
+    padding-bottom: 2rem;
+  }
+  .header {
+    padding-bottom: 4rem;
+  }
+  .crew__info {
+    @include flexDisplay(column-reverse, 2);
+    @include lg {
+      @include flexDisplay(row, 3);
+    }
+
+    text-align: center;
+    // flex-grow: 1;
+
+    @include lg {
+      text-align: left;
+    }
+  }
+
+  .crew__details {
+    padding-block: 3rem;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+
+    p {
+      padding-block: 0.4rem;
+    }
+    .role {
+      font-size: 1.7em;
+      opacity: 50%;
+    }
+    .name {
+      font-size: 2.2em;
+    }
+    .description {
+      padding-block: 2rem;
+      font-size: 1.2em;
+    }
+  }
+
+  .crew__image {
+    img {
+      height: 23rem;
+      @include md{
+        height:30rem;
+      }
+      @include lg{
+        height:30rem
+      }
+      animation: 1s ease-out 0s 1 slideFromRight;
+    }
+  }
+}

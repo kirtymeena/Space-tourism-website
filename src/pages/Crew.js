@@ -12,7 +12,7 @@ const Crew = () => {
   const [bio, setBio] = useState("");
 
   const setData = () => {
-    const res = data.crew.map((crw, idx) => {
+     data.crew.forEach((crw, idx) => {
       if (index === idx) {
         setName(crw.name);
         setRole(crw.role);

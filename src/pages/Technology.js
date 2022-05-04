@@ -13,7 +13,7 @@ const Technology = () => {
   const[descp, setDescp] = useState("")
   
   const setData = ()=>{
-    data.technology.map((tech,idx)=>{
+    data.technology.forEach((tech,idx)=>{
       if(idx===index){
       setName(tech.name)
       setDescp(tech.description)
@@ -61,13 +61,13 @@ const Technology = () => {
               
             </div>
             <div className="tech__images">
-              {index===0 && <img className="desktop" src={launchVehicle}/>}
-              {index===1 && <img className="desktop" src={spacePort}/>}
-              {index===2 && <img className="desktop" src={capsule}/>}
+              {index===0 && <img className="desktop" src={launchVehicle} alt="launchVehicle"/>}
+              {index===1 && <img className="desktop" src={spacePort} alt="spacePort"/>}
+              {index===2 && <img className="desktop" src={capsule}  alt="capsule"/>}
 
-              {index===0 && <img className="mobile" src={launchVehicle2}/>}
-              {index===1 && <img className="mobile" src={spacePort2}/>}
-              {index===2 && <img className="mobile" src={capsule2}/>}
+              {index===0 && <img className="mobile" src={launchVehicle2} alt="launchVehicle"/>}
+              {index===1 && <img className="mobile" src={spacePort2} alt="spacePort"/>}
+              {index===2 && <img className="mobile" src={capsule2} alt="capsule"/>}
             </div>
           </div>
         </div>

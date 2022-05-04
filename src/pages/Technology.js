@@ -49,9 +49,9 @@ const Technology = () => {
                 <p className="top-text text-accent uppercase ff-sans-cond letter-spacing-3">
                   The Terminology....
                 </p>
-                <p className="middle-text text-white uppercase ff-serif letter-spacing-2">
+                <h1 className="middle-text text-white uppercase ff-serif letter-spacing-2">
                   {name}
-                </p>
+                </h1>
                 <p className="text-bottom text-accent ff-sans-normal">
                   {descp}
                 </p>

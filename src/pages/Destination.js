@@ -11,6 +11,7 @@ const Destination = () => {
   const [planetName, setName] = useState("Moon");
   const [distance, setDistance] = useState("");
   const [travel, setTravel] = useState("");
+  const[fade,setFade] = useState(false)
 
   useEffect(() => {
     const setData = () => {
@@ -80,27 +81,27 @@ const Destination = () => {
               Titan
             </button>
           </div>
-          <div className="info">
-            <p className="planet__name ff-serif uppercase letter-spacing-1">
+          <div className={`info fade`}>
+            <h1 className="planet__name ff-serif uppercase letter-spacing-1">
               {planetName}
-            </p>
-            <p className="desc ff-sans-cond uupercase leeter-spacing-2 text-accent">
+            </h1>
+            <p className="desc ff-sans-cond uupercase leeter-spacing-2 text-accent ">
               {description}
             </p>
             <div className="info__bottom">
               <hr />
               <div className="info__footer">
                 <div>
-                  <p className="info__text text-accent uppercase letter-spacing-3 ff-sans-cond">
+                  <p className="info__text text-accent uppercase letter-spacing-3 ff-sans-cond ">
                     Avg. Distance
                   </p>
                   <p className="info__text2 uppercase ff-sans-cond">{distance}</p>
                 </div>
                 <div>
-                  <p className="info__text text-accent uppercase letter-spacing-3 ff-sans-cond">
+                  <p className="info__text text-accent uppercase letter-spacing-3 ff-sans-cond ">
                     EST. Travel time
                   </p>
-                  <p className="info__text2 uppercase ff-sans-cond">{travel}</p>
+                  <p className="info__text2 uppercase ff-sans-cond ">{travel}</p>
                 </div>
               </div>
             </div>

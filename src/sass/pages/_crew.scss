@@ -31,11 +31,17 @@
 
   @include lg {
     @include flexDisplay(column, 2);
-    align-items: flex-start;
+  
+    text-align: left;
     padding-bottom: 2rem;
+  }
+  .top-heading{
+    text-align: left;
+    width:100%;
   }
   .header {
     padding-bottom: 2rem;
+    
   }
   .crew__info {
     @include flexDisplay(column-reverse, 2);

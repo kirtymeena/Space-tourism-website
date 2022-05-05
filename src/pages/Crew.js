@@ -28,7 +28,7 @@ const Crew = () => {
   return (
     <div className="bg__crew container">
       <div className="flex__crew content">
-        <div className="heading uppercase ff-sans-cond text-accent letter-spacing-3">
+        <div className="heading  top-heading uppercase ff-sans-cond text-accent letter-spacing-3">
         <p className="header">
               <span className="num">02</span>Meet your crew
             </p>

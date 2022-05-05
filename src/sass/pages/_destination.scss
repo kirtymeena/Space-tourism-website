@@ -19,7 +19,9 @@
   @include lg {
     background: url("../../assets/destination/background-destination-desktop.jpg");
     background-repeat: no-repeat;
-    min-height:100vh
+    background-size: cover;
+    min-height:100vh;
+    
   }
 }
 
@@ -36,9 +38,11 @@
   @include lg {
     
     @include flexDisplay(column,$gap:6 );
+    
    
     .flex-row{
-      @include flexDisplay(row,6)
+      @include flexDisplay(row,6);
+      justify-content: center;
     }
   }
   .heading{

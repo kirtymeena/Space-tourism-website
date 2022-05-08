@@ -28,6 +28,7 @@ I have been learning how to make a page or website responsive for different scre
 ## Lessons learned
 - Creating common css classes and reusing them saves a lot of time and efforts.
 - Resusing react components.
+- responsiveness is not actually pain but pretty easy just need to know which approch to use at what time.
 
 There is lot of scope of improvment like background image is streching on change of screen size.
 

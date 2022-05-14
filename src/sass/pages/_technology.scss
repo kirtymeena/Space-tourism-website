@@ -23,15 +23,12 @@
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
-
   }
 }
 
 .flex__tech {
   @include flexDisplay(column, 4);
-  height:100vh; 
-  border:2px solid pink;
-  //
+
   @include lg {
     align-items: flex-start;
   }
@@ -91,7 +88,7 @@
       padding-bottom: 1.3rem;
     }
     .text-bottom {
-      font-size:1.2rem;
+      font-size: 1.2rem;
       @include lg {
         font-size: 1.3em;
       }
@@ -118,7 +115,6 @@
       .desktop {
         display: none;
       }
-      
     }
     @include lg {
       .mobile {
@@ -129,7 +125,7 @@
         width: 480px;
         height: 480px;
         position: absolute;
-        top: 16rem;
+        top: 10rem;
         right: 0;
         bottom: 0;
       }

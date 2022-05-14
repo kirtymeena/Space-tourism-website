@@ -28,21 +28,20 @@
   @include flexDisplay(column, 2);
   justify-content: center;
   align-items: center;
-  height:100vh;
+  padding-top: 8rem;
 
   @include lg {
     @include flexDisplay(column, 2);
-  
+
     text-align: left;
     padding-bottom: 2rem;
   }
-  .top-heading{
+  .top-heading {
     text-align: left;
-    width:100%;
+    width: 100%;
   }
   .header {
     padding-bottom: 2rem;
-    
   }
   .crew__info {
     @include flexDisplay(column-reverse, 2);
@@ -67,7 +66,7 @@
     }
     .role {
       opacity: 50%;
-      padding-bottom:0.5rem
+      padding-bottom: 0.5rem;
     }
     .name {
       font-size: 2.2em;

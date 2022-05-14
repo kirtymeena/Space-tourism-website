@@ -4,7 +4,7 @@
 .bg__destination {
   background: url("../../assets/destination/background-destination-mobile.jpg");
   min-height: 100vh;
-  width:100%;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -12,7 +12,7 @@
     background: url("../../assets/destination/background-destination-tablet.jpg");
     background-repeat: no-repeat;
     width: 100vw;
-    min-height:100vh;
+    min-height: 100vh;
     background-size: cover;
   }
 
@@ -20,8 +20,7 @@
     background: url("../../assets/destination/background-destination-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height:100vh;
-    
+    min-height: 100vh;
   }
 }
 
@@ -29,29 +28,25 @@
 
 .destination__flex {
   @include flexDisplay($felxDirection: column, $gap: 4);
-  padding-bottom:4rem;
+  padding-bottom: 4rem;
   justify-content: center;
-  height:100vh;
 
-  .flex-row{
-    @include flexDisplay(column,2)
+  .flex-row {
+    @include flexDisplay(column, 2);
   }
   @include lg {
-    
-    @include flexDisplay(column,$gap:6 );
-    
-   
-    .flex-row{
-      @include flexDisplay(row,6);
+    @include flexDisplay(column, $gap: 6);
+
+    .flex-row {
+      @include flexDisplay(row, 6);
       justify-content: center;
     }
   }
-  .heading{
+  .heading {
     text-align: center;
-    @include lg{
+    @include lg {
       text-align: left;
     }
-    
   }
 }
 
@@ -59,23 +54,21 @@
 .flex__planet {
   @include flexDisplay($felxDirection: column, $gap: 4);
 
-  
   justify-content: center;
   align-items: center;
-  
+
   .planets {
     padding-block: 1rem;
 
     img {
       height: 290px;
-      animation-name: rotate-planet ;
+      animation-name: rotate-planet;
       animation-duration: 30s;
-      animation-iteration-count: infinite;  
-      @include lg{
-        height:350px;
-        margin-left:4rem;
+      animation-iteration-count: infinite;
+      @include lg {
+        height: 350px;
+        margin-left: 4rem;
       }
-      
     }
   }
 }
@@ -83,16 +76,16 @@
 // flex child2
 
 .flex__info {
-  @include flexDisplay(column,1rem);
+  @include flexDisplay(column, 1rem);
   justify-content: center;
   align-items: center;
   text-align: center;
-  @include lg{
-    align-items:flex-start;
+  @include lg {
+    align-items: flex-start;
     text-align: left;
   }
   .info {
-    animation:fadein 2s;
+    animation: fadein 2s;
     padding-inline: 1rem;
     padding-block: 0.5rem;
     .planet__name {
@@ -101,69 +94,63 @@
     }
     .desc {
       font-size: 1.2em;
-      
     }
   }
 }
-.fade{
-  animation:fadein 2s;
-
+.fade {
+  animation: fadein 2s;
 }
 
-.info__bottom{
+.info__bottom {
   padding-top: 3rem;
-
 }
 
-.info__footer{
-  @include flexDisplay(column,2);
-  padding-block:0.8rem;
-  @include lg{
-    @include flexDisplay(row,4);
-    
-
+.info__footer {
+  @include flexDisplay(column, 2);
+  padding-block: 0.8rem;
+  @include lg {
+    @include flexDisplay(row, 4);
   }
-  .info__text{
-    font-size:0.8em;
-    padding-block:0.8rem;
+  .info__text {
+    font-size: 0.8em;
+    padding-block: 0.8rem;
   }
-  .info__text2{
-    font-size:1.5em
+  .info__text2 {
+    font-size: 1.5em;
   }
 }
 
-@keyframes fadein{
-  from{
-    opacity:0
+@keyframes fadein {
+  from {
+    opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
-@keyframes slideInFromLeft{
-  0%{
-      transform: translateX(-100%);
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
   }
-  100%{
-      transform: translateX(0);
+  100% {
+    transform: translateX(0);
   }
 }
 
-@keyframes slideFromRight{
-  0%{
+@keyframes slideFromRight {
+  0% {
     transform: translateX(100%);
   }
-  100%{
+  100% {
     transform: translateX(0);
   }
 }
 
 @keyframes rotate-planet {
-  from{
+  from {
     transform: rotate(0deg);
   }
-  to{
+  to {
     transform: rotate(365deg);
   }
-
 }

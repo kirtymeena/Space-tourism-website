@@ -20,34 +20,28 @@
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-
   }
 }
 
 .flex__container {
   display: flex;
   flex-direction: column;
- 
-  
-  
+
   @include lg {
     flex-direction: row;
     gap: 10rem;
     align-items: center;
     text-align: left;
-    height:100vh;
   }
   gap: 3rem;
   justify-content: center;
   align-items: center;
-  
+
   text-align: center;
- 
+
   .flex__item1 {
     p {
       padding-block: 2rem;
-      
-
     }
     .text-top {
       font-size: 1.3em;
@@ -55,11 +49,10 @@
     .text-mid {
       font-size: 6em;
       font-weight: 300;
-      
-      @include lg{
+
+      @include lg {
         font-size: 8rem;
       }
-      
     }
     .text-bottom {
       font-size: 1.2rem;

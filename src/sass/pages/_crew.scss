@@ -28,6 +28,7 @@
   @include flexDisplay(column, 2);
   justify-content: center;
   align-items: center;
+  height:100vh;
 
   @include lg {
     @include flexDisplay(column, 2);

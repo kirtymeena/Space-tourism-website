@@ -29,11 +29,14 @@
 
 .flex__tech {
   @include flexDisplay(column, 4);
+  height:100vh; 
+  border:2px solid pink;
   //
   @include lg {
     align-items: flex-start;
   }
   align-items: center;
+  justify-content: center;
 }
 
 .tech__info {
@@ -126,7 +129,7 @@
         width: 480px;
         height: 480px;
         position: absolute;
-        top: 10rem;
+        top: 16rem;
         right: 0;
         bottom: 0;
       }

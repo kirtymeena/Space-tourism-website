@@ -31,6 +31,7 @@
   @include flexDisplay($felxDirection: column, $gap: 4);
   padding-bottom:4rem;
   justify-content: center;
+  height:100vh;
 
   .flex-row{
     @include flexDisplay(column,2)

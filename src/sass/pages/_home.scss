@@ -27,7 +27,7 @@
 .flex__container {
   display: flex;
   flex-direction: column;
-  // border:2px solid pink;
+ 
   
   
   @include lg {
@@ -35,10 +35,12 @@
     gap: 10rem;
     align-items: center;
     text-align: left;
+    height:100vh;
   }
   gap: 3rem;
   justify-content: center;
   align-items: center;
+  
   text-align: center;
  
   .flex__item1 {
